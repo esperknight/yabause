@@ -223,6 +223,7 @@
     <addaction name="aViewDebugM68K"/>
     <addaction name="aViewDebugSCUDSP"/>
     <addaction name="aViewDebugSCSP"/>
+    <addaction name="aViewDebugSCSPDSP"/>
     <addaction name="separator"/>
     <addaction name="aViewDebugMemoryEditor"/>
     <addaction name="separator"/>
@@ -232,6 +233,7 @@
     <property name="title">
      <string>&amp;Help</string>
     </property>
+    <addaction name="aHelpCompatibilityList"/>
     <addaction name="aHelpAbout"/>
    </widget>
    <widget class="QMenu" name="mTools">
@@ -853,6 +855,18 @@
     <string>Ctrl+C</string>
    </property>
   </action>
+  <action name="aHelpCompatibilityList">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/actions/icons/actions/compatibility.png</normaloff>:/actions/icons/actions/compatibility.png</iconset>
+   </property>
+   <property name="text">
+    <string>Compatibility List</string>
+   </property>
+   <property name="statusTip">
+    <string>http://wiki.yabause.org/index.php5?title=Compatibility_list</string>
+   </property>
+  </action>
   <action name="aSound">
    <property name="icon">
     <iconset resource="../resources/resources.qrc">
@@ -911,13 +925,21 @@
     <string>Alt+S</string>
    </property>
   </action>
+  <action name="aViewDebugSCSPDSP">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/actions/icons/actions/debug_cpu.png</normaloff>:/actions/icons/actions/debug_cpu.png</iconset>
+   </property>
+   <property name="text">
+    <string>SCSP DSP</string>
+   </property>
+  </action>
   <action name="aTraceLogging">
    <property name="checkable">
     <bool>true</bool>
    </property>
-   <property name="icon">
-    <iconset resource="../resources/resources.qrc">
-     <normaloff>:/actions/icons/actions/debug_cpu.png</normaloff>:/actions/icons/actions/debug_cpu.png</iconset>
+   <property name="checked">
+    <bool>false</bool>
    </property>
    <property name="text">
     <string>Trace Logging</string>
